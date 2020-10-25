@@ -12,11 +12,35 @@ body {
 }
 .columns {
     display: flex;
+    margin: 1em 0;
+    justify-content: space-between;
+    align-items: flex-start; 
+    /* align-items: flex-start; to avoid getting the bg-col background-color: to strech to math height of columns:  */
+}
+
+/* the % left for the justify-content is 15% */
+
+.x1-col {
+  width: 20%;
+}
+
+.x2-col {
+  width: 45%;
+}
+
+.x3-col {
+  width: 70%;
 }
 
 img {
     max-width: 100%;
     
+}
+
+.bg-col {
+  background-color: black;
+  color: white;
+  padding: 1em;
 }
 
 /* typography styles */
@@ -34,3 +58,8 @@ h1 .highlighted {
 h2 {
     font-size: 1.5rem;
 }
+
+p {
+  margin-top: 0;
+}
+
