@@ -18,6 +18,14 @@ body {
     /* align-items: flex-start; to avoid getting the bg-col background-color: to strech to math height of columns:  */
 }
 
+/* media querry changes layout to mobile view to a maz of 500px */
+
+@media (max-width: 500px) {
+  .columns {
+    flex-direction: column;
+  }
+}
+
 /* the % left for the justify-content is 15% */
 
 .x1-col {
@@ -30,6 +38,16 @@ body {
 
 .x3-col {
   width: 70%;
+}
+
+/* makes all the col elemets 100 width for mobile view */
+@media (max-width: 500px) {
+  .x1-col,
+  .x2-col,
+  .x3-col
+  {
+    width: 100%;
+  }
 }
 
 img {
