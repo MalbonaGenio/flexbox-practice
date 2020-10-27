@@ -1,0 +1,60 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+}
+
+/* typography */
+
+/* setting explicitly the font-weigth to 400 as h1 is by default bold */
+
+/* the two margin 0 in h1 and .subtitle make the text to be closer */
+h1 {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #143774;
+  margin: 0;
+}
+
+.subtitle {
+  font-weight: 700;
+  color: #1792d2;
+  font-size: .75rem;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding: 2em 0;
+  background: #f8f8f8;
+}
+
+/* list style removes the dots of the list and padding 0 eliminates the default padding created by the list element. */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* margin set up at 1em in case we later have more items on the nav bar */
+nav li {
+  margin: 0 1em;
+}
+
+/* the padding makes the border bottom to separate a bit more and the 0 to not spread to the sides. */
+nav a {
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+  padding: 0.25rem 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+}
+
+.current-page {
+  border-bottom: solid black 1px;
+}
