@@ -23,13 +23,41 @@ h1 {
   margin: 0;
 }
 
+/* layout */
+
+.container {
+  /* border: red solid 2px; */
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 675px) {
+  .nav-container{
+    flex-direction: column;
+  }
+
+  header {
+    text-align: center;
+  }
+}
 header {
-  text-align: center;
+  /* text-align: center; */
   padding: 2em 0;
   background: #f8f8f8;
 }
 
+/* navigation */
+
+
 /* list style removes the dots of the list and padding 0 eliminates the default padding created by the list element. */
+
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -55,6 +83,24 @@ nav a:focus {
   color: #1792d2;
 }
 
+
+/* adds underline on the .current-page */
 .current-page {
   border-bottom: solid black 1px;
+}
+
+/* hover color is the same color as nav a to make more obvious its the current page, unlike the other ones */
+.current-page:hover {
+  color: 707070;
+}
+
+/* puts the links of the nav bar on column direction. marigns to overide the margin-left on nav li and add some space on top of the elements */
+@media (max-width: 675px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 0.5em 0;
+  }
 }
